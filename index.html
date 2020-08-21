@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <!-- ******************************Task1************************************ -->
+    <!-- <button id="btn" onclick="changeBtnInfo()">Vote!</button>
+    <script>
+
+    function changeBtnInfo() {
+          var totalTime = new Date().toUTCString(); 
+          var ajaxRequest = new XMLHttpRequest();
+          ajaxRequest.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("btn").innerText =
+            "Your vote is accepted: " + totalTime;
+            }
+        };
+       
+        ajaxRequest.open("GET", "#", true);
+        ajaxRequest.send(); 
+    }    
+    </script> -->
+    
+    <!-- ******************************Task2************************************ -->
+
+    <!-- <button id="btn" onclick="showAuthors()">Download books</button>
+
+    <script>
+        function showAuthors(){
+            let ajaxRequest = new XMLHttpRequest();
+            ajaxRequest.open('GET', 'books.json', true);
+            ajaxRequest.onreadystatechange = function(){
+                if(ajaxRequest.readyState != 4) return;
+                if(ajaxRequest.status != 200){
+                    alert(Error)
+                }else{
+                    let books = JSON.parse(ajaxRequest.responseText);
+                    for(var i=0; i < books.length; i++)
+                        document.write(`<li>${books[i].author}</li>`);
+                    }
+                }      
+            ajaxRequest.send();
+        } 
+
+    </script> -->
+</body> 
+</html>
